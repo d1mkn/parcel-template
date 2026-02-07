@@ -1,25 +1,26 @@
 {
   "name": "parcel-template",
-  "version": "2.0.0",
-  "description": "",
+  "version": "2.1.0",
+  "description": "Modern frontend starter template using Parcel 2",
   "homepage": "https://github.com/d1mkn/parcel-template",
   "scripts": {
-    "start": "parcel src/*.html -p 2222",
-    "build": "parcel build src/*.html --public-url /parcel-template/"
+    "start": "parcel src/*.html --port 2222",
+    "build": "parcel build src/*.html --public-url ./",
+    "clean": "rm -rf dist .parcel-cache"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/d1mkn/parcel-template"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.6.0",
-    "parcel": "^2.6.0",
-    "parcel-bundler": "^1.12.5",
+    "@parcel/transformer-sass": "^2.13.0",
+    "parcel": "^2.13.0",
     "parcel-reporter-clean-dist": "^1.0.4",
-    "posthtml-include": "^1.7.4"
+    "posthtml-include": "^1.7.4",
+    "sass": "^1.77.0"
   },
-  "browserslist": "> 0.5%, last 2 versions, not dead",
   "dependencies": {
-    "modern-normalize": "^1.1.0"
-  }
+    "modern-normalize": "^2.0.0"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
 }
